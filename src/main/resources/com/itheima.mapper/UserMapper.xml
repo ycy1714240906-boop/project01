@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+     namespace: 命名空间，这个属性为Mapper接口的全路径
+     id:是sql语句的唯一标识
+     resultType: 返回结果的类型，可以是任意类型，但要和返回值一致
+-->
+<mapper namespace="com.itheima.springboot01.mapper.UserMapper">
+    <select id="selectAll"  resultType="com.itheima.springboot01.pojo.LoginUser">
+        select * from login_user;
+    </select>
+
+</mapper>
